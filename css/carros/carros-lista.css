@@ -16,10 +16,15 @@
 .carros-lista ul {
   display: flex;
   gap: 40px;
-  padding: 0px 20px;
+  padding: 0px 20px 20px 20px;
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+  overflow-x: auto;
+}
+
+.carros-lista li {
+  min-width: 280px;
 }
 
 .carros-lista a {
@@ -43,8 +48,23 @@
   background-color: var(--cor-p1);
   display: inline-block;
   margin-right: 8px;
+  transition: width 0.2s;
+}
+
+.carros-lista a:hover h3::before {
+  width: 24px;
 }
 
 .carros-lista li span {
   padding-left: 20px;
+}
+
+@media (max-width: 800px) {
+  .carros-lista {
+    padding-bottom: 60px;
+  }
+  .carros-lista ul {
+    gap: 20px;
+  }
+ 
 }
