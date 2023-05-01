@@ -5,12 +5,7 @@
 
 .carros-lista h2 {
   margin-bottom: 40px;
-  max-width: 1200px;
-  box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+ 
 }
 
 .carros-lista ul {

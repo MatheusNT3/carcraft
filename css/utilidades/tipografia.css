@@ -26,9 +26,9 @@
 }
 
 .font-2-l-b {
-  font-weight: 500;
-  letter-spacing: 0.015em;
-  text-transform: uppercase;
+ font: 500 1.5rem/1.5 "Roboto", sans-serif;
+ text-transform: uppercase;
+ letter-spacing: 1.5;
 }
 
 .font-2-l, .font-2-l-b {
