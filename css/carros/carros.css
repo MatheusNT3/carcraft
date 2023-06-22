@@ -1,0 +1,75 @@
+.carros-bg {
+  background: var(--cor-11);
+}
+
+.carros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.carros-imagem {
+  display: grid;
+}
+
+.carros-imagem img {
+  grid-area: 1/1;
+}
+
+.carros-imagem span {
+  grid-area: 1/1;
+  background: var(--cor-12);
+  padding: 8px 16px 8px 8px;
+  display: inline-block;
+  place-self: start end;
+  margin-top: 20px;
+  border-radius: 4px 0 0 4px;
+}
+
+.carros-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: start;
+}
+
+.carros h2, 
+.carros p {
+  grid-column: 1/-1;
+}
+
+.carros h2 {
+  margin-bottom: 20px;
+}
+
+.carros h2::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  margin-bottom: 8px;
+}
+
+.carros p {
+  margin-bottom: 32px;
+}
+
+.carros a {
+  place-self: end;
+}
+
+.carros li {
+  display: flex;
+  align-itens: center;
+}
+
+.carros li + li {
+  margin-top: 16px;
+}
+
+.carros-conteudo img {
+  width: 24px;
+  margin-right: 8px;
+}

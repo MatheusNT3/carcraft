@@ -18,9 +18,13 @@
 
 /* Carros */
 @import "./carros/carros-lista.css";
+@import "./carros/carros.css";
 
 /* Seguros */
 @import "./seguros/seguros.css";
+
+/* Termos */
+@import "./termos/termos.css";
 
 
 
