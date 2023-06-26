@@ -1,5 +1,5 @@
 .carros-bg {
-  background: var(--cor-11);
+  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
 }
 
 .carros {
@@ -72,6 +72,7 @@
 .carros-conteudo img {
   width: 24px;
   margin-right: 8px;
+  align-content: start;
 }
 
 @media (max-width: 800px) {
@@ -80,6 +81,9 @@
     gap: 20px;
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+  .carros-bg {
+    background: var(--cor-11);
   }
 }
 
