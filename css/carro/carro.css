@@ -10,18 +10,19 @@
 #carro .titulo p {
   text-transform: uppercase;
 }
+
 .carro-imagens {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.carro-imagens {
+.carro-imagens img {
   flex: 1;
   min-width: 200px;
 }
 
-.carro-imagens:first-child {
+.carro-imagens img:first-child {
   min-width: 100%;
 }
 
@@ -39,32 +40,28 @@
 }
 
 .carro-comprar a {
- grid-row: span 2;
+  grid-row: span 2;
 }
 
 .carro-comprar span {
   display: flex;
   align-items: center;
   background-color: var(--cor-12);
-  gap: 8px;
   padding: 4px 8px;
   border-radius: 4px;
+  gap: 8px;
 }
 
 .carro-conteudo h2 {
   text-transform: uppercase;
-  letter-spacing: 0.015em;
+  letter-spacing: 0.015rem;
   margin-bottom: 12px;
 }
 
-.carro-informacoes, 
-.carro-ficha {
+.carro-informacoes, .carro-ficha {
   padding: 32px;
   background-color: var(--cor-12);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-
+  border-radius: 4px;
 }
 
 .carro-informacoes {
@@ -84,15 +81,15 @@
 }
 
 .carro-ficha li {
-  padding: 4px 0;
+  padding: 4px 0px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--cor-11);
 }
 
-/* .carro-ficha li:last-child {
+.carro-ficha li:last-child {
   border-bottom: none;
-} */
+}
 
 .carro-ficha span {
   color: var(--cor-6);
@@ -110,10 +107,9 @@
 }
 
 @media (max-width: 400px) {
-  .carro-imagens {
+  .carro-informacoes {
     grid-template-columns: 1fr;
   }
-
   .carro-comprar {
     grid-template-columns: 1fr;
   }
