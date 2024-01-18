@@ -50,7 +50,7 @@ console.log(perguntas);
 
 // Galeria de Carros
 
-const galeria = document.querySelectorAll('.carro-imagens img')
+const galeria = document.querySelectorAll('.carro-imagens img');
 const galeriaContainer = document.querySelector('.carro-imagens');
 
 function trocarImagem(event) {
@@ -67,3 +67,10 @@ function eventosGaleria(img) {
 }
 
 galeria.forEach(eventosGaleria);
+
+
+// Animação
+
+if(window.SimpleAnime) {
+  new SimpleAnime();
+}

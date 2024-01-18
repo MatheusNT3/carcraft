@@ -1,10 +1,11 @@
 /* CONFIGS INTRODUÇÃO */
 
 .introducao-bg {
-  background: var(--cor-12) url('../../img/dec/home.svg');
+  background: var(--cor-12) url('../../img/dec/home.svg') ;
   box-shadow: inset 0px -120px var(--cor-0);
-
 }
+
+
 
 .introducao {
   display: grid;
